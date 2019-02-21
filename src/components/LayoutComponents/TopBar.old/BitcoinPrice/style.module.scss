@@ -1,0 +1,6 @@
+@import '../../../../assets/styles/mixins.scss';
+.bitcoinPrice {
+  @media (max-width: 1300px) {
+    display: none !important;
+  }
+}

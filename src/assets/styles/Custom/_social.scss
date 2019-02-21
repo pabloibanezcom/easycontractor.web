@@ -1,0 +1,13 @@
+@import '../mixins.scss';
+.btn-google {
+  background-color: $google !important;
+  border-color: $google !important;
+  &:hover {
+    background-color: lighten($google, 8%) !important;
+    border-color: $google !important;
+  }
+  &:focus {
+    background-color: lighten($google, 8%) !important;
+    border-color: $google !important;
+  }
+}

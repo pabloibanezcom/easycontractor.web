@@ -1,0 +1,19 @@
+.ant-dropdown-menu-item>a,
+.ant-dropdown-menu-submenu-title>a {
+  &:hover {
+    color: rgba(0, 0, 0, .65);
+  }
+}
+
+.dropdown {
+  .icon {
+    margin-right: .46rem;
+    color: $gray;
+    transition: all .2s ease-in-out;
+  }
+  &:hover {
+    .icon {
+      color: $gray-darken;
+    }
+  }
+}
