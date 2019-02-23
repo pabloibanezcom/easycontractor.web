@@ -1,0 +1,40 @@
+.client-card {
+  padding: 2.3rem;
+  position: relative;
+  cursor: pointer;
+  .icon {
+    text-align: center;
+    margin-bottom: 1.15rem;
+    i {
+      font-size: 3.5rem;
+      color: #b8beca;
+    }
+    img {
+      width: 90px;
+    }
+  }
+  .name {
+    display: block;
+    text-align: center;
+    font-size: 1.61rem;
+    color: $black;
+    font-weight: 400;
+  }
+  .web {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: $text;
+    margin-bottom: 1.53rem;
+  }
+  .period {
+    text-align: center;
+    border-top: 1px solid $gray-border;
+    color: $text;
+    padding-top: .76rem;
+    margin-bottom: -1.16rem;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}

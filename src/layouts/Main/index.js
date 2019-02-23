@@ -94,7 +94,7 @@ class MainLayout extends React.PureComponent {
 
 const mapStateToProps = state => {
   return {
-    isBorderless: false,
+    isBorderless: true,
     isSquaredBorders: false,
     isFixedWidth: false,
     isMenuShadow: false,

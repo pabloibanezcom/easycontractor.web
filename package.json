@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.6",
     "@svgr/webpack": "2.4.1",
+    "animate.css": "^3.7.0",
     "antd": "^3.13.2",
     "auth0-js": "^9.10.0",
     "axios": "^0.18.0",
