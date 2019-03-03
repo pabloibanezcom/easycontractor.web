@@ -26,7 +26,7 @@ class MenuLeft extends React.Component {
     isMenuCollapsed: false,
     selectedKeys: [],
     openedKeys: [],
-    menuData: getPages()
+    menuData: getPages().filter(e => e.divider || e.showInMenu)
   }
 
   componentWillMount() {

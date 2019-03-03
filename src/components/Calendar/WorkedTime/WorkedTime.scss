@@ -1,0 +1,24 @@
+.worked-time {
+  .client-timelog {
+    border-bottom: 1px solid $gray-border;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .add-client-log {
+    margin-top: 20px;
+    text-align: center
+  }
+  .client {
+    font-weight: 500;
+    font-size: 15px;
+    img {
+      width: 28px;
+      margin-top: -14px;
+      margin-right: 10px;
+    }
+  }
+  .time {
+    font-weight: bold;
+    font-size: 15px;
+  }
+}

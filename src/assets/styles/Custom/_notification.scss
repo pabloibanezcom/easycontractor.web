@@ -1,0 +1,36 @@
+.notification {
+  background-color: $menuBg !important;
+  color: $white !important;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  .ant-notification-notice-message {
+    color: $white !important;
+  }
+  .ant-notification-close-icon {
+    color: $white;
+  }
+  &__info {
+    border-bottom-color: $primary;
+    .notification__icon {
+      color: $primary !important;
+    }
+  }
+  &__success {
+    border-bottom-color: $success;
+    .notification__icon {
+      color: $success !important;
+    }
+  }
+  &__warning {
+    border-bottom-color: $warning;
+    .notification__icon {
+      color: $warning !important;
+    }
+  }
+  &__error {
+    border-bottom-color: $danger;
+    .notification__icon {
+      color: $danger !important;
+    }
+  }
+}

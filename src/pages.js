@@ -4,7 +4,8 @@ export default () => {
       title: 'Overview',
       key: 'overview',
       url: '/overview',
-      icon: 'icmn icmn-home'
+      icon: 'icmn icmn-home',
+      showInMenu: true
     },
     {
       divider: true,
@@ -14,6 +15,7 @@ export default () => {
       key: 'accounting-periods',
       url: '/accounting-periods',
       icon: 'icmn icmn-books',
+      showInMenu: true
     },
     {
       divider: true,
@@ -23,6 +25,7 @@ export default () => {
       key: 'calendar',
       url: '/calendar',
       icon: 'icmn icmn-calendar',
+      showInMenu: true
     },
     {
       divider: true,
@@ -31,13 +34,29 @@ export default () => {
       title: 'Clients',
       key: 'clients',
       icon: 'fa fa-briefcase',
-      url: '/clients'
+      url: '/clients',
+      showInMenu: true
+    },
+    {
+      title: 'Client Profile',
+      key: 'clientsProfile',
+      icon: 'fa fa-briefcase',
+      url: '/clients/:clientKey',
+      showInMenu: false
     },
     {
       title: 'Invoices',
       key: 'invoices',
       icon: 'icmn icmn-file-text',
-      url: '/invoices'
+      url: '/invoices',
+      showInMenu: true
+    },
+    {
+      title: 'Add Invoice',
+      key: 'addInvoice',
+      icon: 'icmn icmn-file-text',
+      url: '/invoices/new',
+      showInMenu: false
     },
     {
       divider: true,
@@ -46,13 +65,15 @@ export default () => {
       title: 'Expenses',
       key: 'expenses',
       icon: 'icmn-credit-card',
-      url: '/expenses'
+      url: '/expenses',
+      showInMenu: true
     },
     {
       title: 'Director withdrawals',
       key: 'director-withdrawals',
       icon: 'icmn icmn-user-tie',
-      url: '/director-withdrawals'
+      url: '/director-withdrawals',
+      showInMenu: true
     },
     {
       divider: true,
@@ -61,13 +82,15 @@ export default () => {
       title: 'Shareholders',
       key: 'shareholders',
       icon: 'icmn icmn-users',
-      url: '/shareholders'
+      url: '/shareholders',
+      showInMenu: true
     },
     {
       title: 'Dividends',
       key: 'dividends',
       icon: 'fa fa-money',
-      url: '/dividends'
+      url: '/dividends',
+      showInMenu: true
     },
     {
       divider: true,
@@ -76,13 +99,15 @@ export default () => {
       title: 'VAT Return',
       key: 'vat_return',
       icon: 'icon icmn-loop',
-      url: '/vat-return'
+      url: '/vat-return',
+      showInMenu: true
     },
     {
       title: 'Corporation Tax',
       key: 'corporation_tax',
       icon: 'fa fa-percent',
-      url: '/corporation-tax'
+      url: '/corporation-tax',
+      showInMenu: true
     },
     {
       divider: true,
@@ -91,7 +116,8 @@ export default () => {
       title: 'Company documents',
       key: 'company_documents',
       icon: 'icmn icmn-folder',
-      url: '/documents'
+      url: '/documents',
+      showInMenu: true
     }
   ]
 }

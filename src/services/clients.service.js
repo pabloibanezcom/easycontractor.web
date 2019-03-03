@@ -22,6 +22,10 @@ export default class ClientsService {
     return axios.delete(`/client/${clientId}`);
   }
 
+  static addWorkingDays = async (clientId, workingDays) => {
+    return axios.put(`/client/${clientId}/days`, { days: workingDays });
+  }
+
   static searchInvoices = async (searchObj) => {
     return axios.post('/invoice/search', searchObj);
   }

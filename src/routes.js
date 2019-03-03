@@ -21,8 +21,14 @@ const asyncComponents = {
   clients: asyncComponent(() => {
     return import('./containers/Company/Clients/Clients');
   }, 'main'),
+  clientsProfile: asyncComponent(() => {
+    return import('./containers/Company/Clients/ClientProfile/ClientProfile');
+  }, 'main'),
   invoices: asyncComponent(() => {
     return import('./containers/Company/Invoices/Invoices');
+  }, 'main'),
+  addInvoice: asyncComponent(() => {
+    return import('./containers/Company/Invoices/InvoiceForm/InvoiceForm');
   }, 'main')
 }
 
@@ -34,7 +40,7 @@ const routes = (
   <Switch>
     <Route path="/login" component={asyncLogin} />
     <Route path="/auth/external" component={asyncExternalLogin} />
-    {getCompanyPages().map(page => asyncComponents[page.key] && <Route key={page.key} path={`/company/:companyUrl${page.url}`} component={asyncComponents[page.key]} />)}
+    {getCompanyPages().map(page => asyncComponents[page.key] && <Route key={page.key} path={`/company/:companyUrl${page.url}`} exact component={asyncComponents[page.key]} />)}
     <Route path="/profile" component={asyncProfile} />
     <Route exact path="/company/:companyUrl" render={(props) => (<Redirect to={`/company/${props.match.params.companyUrl}/overview`} />)} />
     <Redirect to="/login/" />
